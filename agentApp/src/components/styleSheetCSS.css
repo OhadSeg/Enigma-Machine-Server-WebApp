@@ -1,0 +1,50 @@
+.root {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+
+}
+
+.button {
+    -fx-background-color: linear-gradient(#c5bcba, #aba6a6);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: linear-gradient(#000000, #000000);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 5, 0.0, 0, 1);
+}
+
+
+.label {
+    -fx-letter-spacing: 1px;
+    -fx-text-fill: linear-gradient(#2b3fff, #3fa7cc);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+}
+
+.text-field {
+    -fx-border-color: #000000;
+    -fx-border-width: 3px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-pref-column-count: 25;
+}
+
+.text-area {
+    -fx-border-color: #050000;
+    -fx-border-width: 3px;
+    -fx-background-radius: 25px;
+    -fx-pref-column-count: 25;
+}
+
+.combo-box {
+    -fx-border-color: #5b91da;
+    -fx-border-width: 3px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-pref-column-count: 25;
+}
+
+
+.scroll-bar {
+    -fx-background-color: #61c1e3;
+    -fx-border-radius: 10px;
+    -fx-box-shadow: inset 0 0 5px grey;
+}

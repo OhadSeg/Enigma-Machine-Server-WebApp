@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="702.0" stylesheets="@../styleSheetCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.primary.AgentAppController">
+   <center>
+      <AnchorPane prefHeight="411.0" prefWidth="657.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="28.0" layoutY="214.0" prefHeight="20.0" prefWidth="146.0" text="Candidates">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="candidatesListView" layoutX="28.0" layoutY="255.0" prefHeight="124.0" prefWidth="625.0" />
+            <fx:include fx:id="contestAndTeam" source="../../../../allyApp/src/components/contest/contestAndTeam.fxml" />
+            <Button fx:id="logoutButton" layoutX="608.0" layoutY="404.0" mnemonicParsing="false" onAction="#logoutActionListener" text="Logout" />
+            <Separator layoutX="247.0" layoutY="8.0" orientation="VERTICAL" prefHeight="238.0" prefWidth="8.0" />
+            <Label layoutX="268.0" layoutY="-3.0" text="Progress">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="268.0" layoutY="58.0" text="Tasks In Queue:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="268.0" layoutY="149.0" text="Total Completed Tasks:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="268.0" layoutY="104.0" text="Total Pulled Tasks:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="tasksInQueueLabel" layoutX="447.0" layoutY="58.0" prefHeight="17.0" prefWidth="144.0" text="0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalCompletedTasksLabel" layoutX="447.0" layoutY="151.0" prefHeight="20.0" prefWidth="143.0" text="0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPulledTasksLabel" layoutX="447.0" layoutY="106.0" prefHeight="20.0" prefWidth="142.0" text="0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="60.0" prefWidth="639.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="470.0" layoutY="22.0" text="WINNER:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="winnerNameLabel" layoutX="555.0" layoutY="27.0" />
+            <Label layoutX="27.0" layoutY="19.0" text="Team Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="teamNameLabel" layoutX="116.0" layoutY="21.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
