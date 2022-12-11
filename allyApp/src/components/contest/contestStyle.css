@@ -1,0 +1,6 @@
+.tile{
+        -fx-background-color: lightblue;
+        -fx-border-width: 5px;
+        -fx-border-color: #00008B;
+        -fx-background-radius: 5.0;
+}
