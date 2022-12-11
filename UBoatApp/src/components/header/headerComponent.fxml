@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<ScrollPane styleClass="root" stylesheets="@../styleSheetCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.header.HeaderComponentController">
+   <content>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="729.0" styleClass="root" stylesheets="@../styleSheetCSS.css">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="74.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="430.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="7.0" prefWidth="7.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="fileErrorMessageLabel" prefHeight="83.0" prefWidth="435.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="loadFileButton" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#loadFileButtonActionListener" text="Load File" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="725.0" GridPane.columnIndex="1">
+               <children>
+                  <Label fx:id="filePathLabel" layoutY="12.0" prefHeight="24.0" prefWidth="443.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="greetingLabel" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </content>
+</ScrollPane>

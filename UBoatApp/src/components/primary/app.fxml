@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainBP" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" styleClass="root" stylesheets="@../styleSheetCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.primary.UboatAppController">
+   <top>
+      <fx:include fx:id="headerComponent" source="../header/headerComponent.fxml" />
+   </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab fx:id="machineTab" text="Machine">
+               <content>
+                  <AnchorPane prefHeight="570.0" prefWidth="854.0">
+                     <children>
+                        <fx:include fx:id="firstTabComponent" source="../firstTab/firstTabComponent.fxml" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab fx:id="contestTab" text="Encrypt / Decrypt">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include fx:id="secondTabComponent" source="../secondTab/secondTabComponent.fxml" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

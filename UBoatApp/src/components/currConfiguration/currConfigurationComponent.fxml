@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="364.0" prefWidth="183.0" styleClass="root" stylesheets="@../styleSheetCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.currConfiguration.CurrConfiComponentController">
+   <children>
+      <Label layoutX="9.0" layoutY="14.0" text="Current Configuration">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="53.0" text="Rotors" />
+      <Label layoutX="48.0" layoutY="143.0" text="Window Position" />
+      <Label layoutX="76.0" layoutY="218.0" text="Notch" />
+      <Label layoutX="68.0" layoutY="286.0" text="Reflector" />
+      <FlowPane fx:id="currRotorsFP" layoutX="16.0" layoutY="78.0" prefHeight="49.0" prefWidth="152.0" />
+      <FlowPane fx:id="currWindowPosFP" layoutX="17.0" layoutY="169.0" prefHeight="49.0" prefWidth="152.0" />
+      <FlowPane fx:id="currNotchFP" layoutX="16.0" layoutY="247.0" prefHeight="39.0" prefWidth="152.0" />
+      <Label fx:id="reflectorLabel" layoutX="77.0" layoutY="317.0" prefHeight="17.0" prefWidth="33.0" />
+   </children>
+</AnchorPane>

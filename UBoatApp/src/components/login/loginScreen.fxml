@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.login.LoginController">
+   <center>
+      <GridPane alignment="CENTER" prefHeight="394.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="122.33334350585938" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.66668701171875" minWidth="10.0" prefWidth="477.6666564941406" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="194.66668701171875" minHeight="10.0" prefHeight="45.333343505859375" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="359.99998474121094" minHeight="10.0" prefHeight="354.6666564941406" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="helloUserLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="122.0" text="Label" textAlignment="CENTER" />
+            <Label fx:id="absLabel" alignment="CENTER" prefHeight="39.0" prefWidth="478.0" text="Uboat Login" GridPane.columnIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <TextField fx:id="userNameTextField" layoutX="3.0" layoutY="2.0" onAction="#activateUserNameTextField" prefHeight="25.0" prefWidth="471.0" />
+                  <Button fx:id="loginButton" layoutX="130.0" layoutY="201.0" mnemonicParsing="false" onAction="#loginButtonActionListener" prefHeight="47.0" prefWidth="85.0" text="Login" />
+                  <Button fx:id="quitButton" layoutX="257.0" layoutY="201.0" mnemonicParsing="false" onAction="#activateQuitButton" prefHeight="47.0" prefWidth="85.0" text="Quit" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="355.0" prefWidth="110.0" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="userNameLabel" alignment="TOP_CENTER" layoutX="7.0" prefHeight="24.0" prefWidth="122.0" text="User Name :" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
